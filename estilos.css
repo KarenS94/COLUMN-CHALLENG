@@ -1,0 +1,161 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /*(paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* background, headings, buttons)*/
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--very-light-gray);
+  overflow: hidden;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.columnas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconos {
+  margin-top: 20px;
+  margin-left: 8%;
+}
+
+.sedans {
+  height: 450px;
+  width: 280px;
+  padding: 18px;
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  height: 450px;
+  width: 280px;
+  padding: 18px;
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  height: 450px;
+  width: 280px;
+  padding: 18px;
+  background-color: var(--very-dark-cyan);
+}
+
+h2 {
+  text-align: left;
+  margin-top: 2%;
+  font-family: 'Big Shoulders Display';
+  color: white;
+  padding: 25px;
+  font-size: 35px;
+}
+
+p {
+  text-align: left;
+  margin-top: -20%;
+  color: var(--transparent-white);
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+button {
+  background-color: white;
+  width: 140px;
+  height: 45px;
+  border-radius: 25px;
+  border-style: none;
+  font-size: 14px;
+  margin-top: 10%;
+  margin-left: 8%;
+  background-color: var(--very-light-gray);
+}
+
+.sedans-btn {
+  color: var(--bright-orange);
+}
+
+.suvs-btn {
+  color: var(--dark-cyan);
+}
+
+.luxury-btn {
+  color: var(--very-dark-cyan);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--very-light-gray);
+}
+
+.sedans-btn:hover {
+  background-color: var(--bright-orange);
+  color: var(--very-light-gray);
+}
+
+.suvs-btn:hover {
+  background-color: var(--dark-cyan);
+  color: var(--very-light-gray);
+}
+
+.luxury-btn:hover {
+  background-color: var(--very-dark-cyan);
+  color: var(--very-light-gray);
+}
+
+@media (max-width: 784px) {
+  .flex {
+    padding-top: 5%;
+    height: 100%;
+  }
+  .columnas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h2 {
+    font-size: 35px;
+    padding: 20px;
+  }
+  p {
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
